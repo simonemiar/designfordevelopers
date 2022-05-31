@@ -1,0 +1,100 @@
+@use "../base/color";
+// @import url("https://use.typekit.net/fed6jan.css");
+
+.logo {
+    margin: 10px 0px 6px 10px;
+    width: 2.5rem;
+    font-size: 1.5rem;
+}
+
+%a-text-font {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  // letter-spacing: 2px;
+}
+
+%body-text-font {
+  font-family: 'Montserrat', sans-serif;;
+  font-weight: 400;
+  color: color.$black;
+  max-width: 60ch;
+  letter-spacing: 0.4px;
+  line-height: 25px;
+}
+
+%headline-font {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: calc(1rem + (50 - 2.5) * ((100vw - 300px) / (1600 - 300)));
+    letter-spacing: 3px;
+    padding-bottom: 1rem;
+    color: color.$blue;
+}
+
+%headline2-font {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: calc(1.8rem + (30 - 2) * ((100vw - 300px) / (1600 - 300)));
+    letter-spacing: 3px;
+    padding: 15px 0px;
+    color: color.$blue;
+}
+
+%headline3-font {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: calc(1rem + (18 - 1) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 550;
+    color: color.$blue;
+}
+
+%headline4-font {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: calc(0.5rem + (18 - 0.5) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+    color: color.$blue;
+    font-weight: 500;
+}
+
+%headline5-font {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: calc(0.6rem + (10 - 0.8) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 400;
+    color: color.$blue;
+}
+
+
+.strong{
+  color: color.$blue;
+  font-weight: 500;
+}
+
+
+a {
+  @extend %a-text-font;
+  color: color.$blue;
+}
+
+p,
+details {
+  @extend %body-text-font;
+}
+
+h1 {
+  @extend %headline-font;
+}
+
+h2 {
+  @extend %headline2-font;
+}
+
+h3 {
+  @extend %headline3-font;
+}
+
+h4 {
+  @extend %headline4-font;
+}
+
+h5 {
+  @extend %headline5-font;
+}

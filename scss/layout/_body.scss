@@ -1,0 +1,78 @@
+@use "../base/color";
+
+// loading animation
+
+#loading_container {
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: color.$blue;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    
+}
+.hidden {
+    display: none;
+}
+
+
+
+main{
+    padding: 15px;
+
+    a{
+        margin: 0 auto;
+    }
+    .mouse_center{
+        display: grid;
+    }
+}
+
+body{
+    background-color: color.$offwhite;
+}
+
+
+hr{
+    margin: 10px 0px;
+    background-color: color.$blue;
+    border: none;
+    height: 2px;
+}
+
+.github-corner{
+    visibility: hidden;
+}
+
+
+
+@media (min-width: 768px) {
+    .github-corner{
+        visibility: visible;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+}
+
+// intersection observer
+section{
+    opacity: 0; 
+    position: relative;
+    bottom: -40px;
+    transition: all 0.8s ease-out;
+}
+
+.show{
+    opacity: 1;
+    bottom: 0;
+     
+}
+
+
