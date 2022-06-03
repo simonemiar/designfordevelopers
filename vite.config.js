@@ -6,9 +6,9 @@ module.exports = {
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        color: resolve(__dirname, "colors_animations.html"),
-        fonts: resolve(__dirname, "fonts_ui.html"),
-        contact: resolve(__dirname, "responsive_design.html"),
+        projectone: resolve(__dirname, "fonts_ui.html"),
+        projecttwo: resolve(__dirname, "responsive_design.html"),
+        projecttree: resolve(__dirname, "colors_animations.html"),
       },
     },
   },
