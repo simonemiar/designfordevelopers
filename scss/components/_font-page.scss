@@ -152,23 +152,49 @@ html {
   }
 }
 
-.card_container {
-  display: grid;
-}
-.card {
-  width: 50vh;
-  margin: 20px;
-
-  img {
-    width: 100%;
+#assignments {
+  #card_container {
+    display: grid;
+    justify-content: center;
   }
+  .card {
+    width: 50vh;
+    margin: 20px;
 
-  button {
-    width: 100%;
+    img {
+      width: 100%;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 678px) {
+  #card_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 footer {
   background-color: color.$blue;
-  color: color.$offwhite;
+  height: 100%;
+  .icons {
+    background-color: blue;
+    display: flex;
+    width: 100%;
+    height: 5px;
+
+    svg {
+      background-color: blue;
+      width: 100%;
+      padding: 20px;
+    }
+  }
+
+  p {
+    color: color.$offwhite;
+  }
 }
